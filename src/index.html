@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Test project</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="myForm" class="form">
+        <div class="input-container">
+          <label for="name" class="input-label">Name:</label>
+          <input type="text" id="name-input" name="name" class="input" />
+          <p class="error" id="name-error"></p>
+        </div>
+
+        <div class="input-container">
+          <label for="email" class="input-label">E-mail:</label>
+          <input type="email" id="email-input" name="email" class="input" />
+          <p class="error" id="email-error"></p>
+        </div>
+
+        <div class="input-container">
+          <label for="phone" class="input-label">Phone:</label>
+          <input type="text" id="phone-input" name="phone" class="input" />
+          <p class="error" id="phone-error"></p>
+        </div>
+
+        <div class="input-container">
+          <label for="textarea" class="input-label">Message:</label>
+          <textarea
+            id="message-input"
+            name="message"
+            class="textarea"
+          ></textarea>
+          <p class="error" id="message-error"></p>
+        </div>
+
+        <button id="submit-button" type="submit" class="submit-button">
+          Submit
+        </button>
+
+        <div id="toast" class="toast-container">
+          <p id="toast-message" class="toast-message">Message</p>
+        </div>
+      </form>
+
+      <button id="modal-open-button" class="modal-button">Open modal</button>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            excepturi animi inventore quidem perferendis alias, assumenda autem
+            laborum. Commodi ex itaque natus architecto quam excepturi nemo
+            aliquid repudiandae reiciendis quisquam.
+          </p>
+          <button class="close-modal-button" id="modal-close-button">
+            Close modal
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
